@@ -1,0 +1,98 @@
+/* Makeup Hub — Global Styles + Design Tokens */
+
+:root {
+  --color-cream:         #FAF7F4;
+  --color-parchment:     #F0EAE3;
+  --color-ivory:         #FDFAF7;
+  --color-sand:          #DDD0C4;
+  --color-sand-dark:     #C4B4A6;
+  --color-taupe:         #A89080;
+  --color-charcoal:      #2C2520;
+  --color-charcoal-soft: #4A3F3A;
+  --color-charcoal-muted:#6B5E58;
+  --color-rosy:          #B8726E;
+  --color-rosy-light:    #D4A09C;
+  --color-berry:         #6B2D3E;
+  --color-terracotta:    #C4614A;
+  --color-terracotta-dark:#A24F3B;
+  --color-blush:         #E8B4AD;
+
+  /* Burgundy / crimson palette */
+  --color-burg-deepest:  #120606;
+  --color-burg-dark:     #1E0A0A;
+  --color-burg:          #4A1010;
+  --color-burg-mid:      #6E1A1A;
+  --color-crimson:       #C01818;
+  --color-crimson-hover: #991212;
+  --color-crimson-light: #E03030;
+  --color-burg-muted:    #C8AFA8;
+
+  --shadow-1: 0 2px 8px rgba(44, 37, 32, 0.06);
+  --shadow-2: 0 8px 24px rgba(44, 37, 32, 0.10);
+  --shadow-3: 0 16px 48px rgba(44, 37, 32, 0.16);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body, 'DM Sans', system-ui, sans-serif);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .desktop-links {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  /* Category strip: 2 cols on mobile */
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Wholesale form row stacks */
+  .wholesale-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Product grid full width padding */
+  .product-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Single column category on very small screens */
+  .cat-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
