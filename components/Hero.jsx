@@ -31,7 +31,7 @@ export default function Hero() {
 
       <div style={s.imageWrap}>
         <div style={s.imagePlaceholder}>
-          <img src="/images/work1.jpeg" alt="Makeup studio" style={s.heroImg} />
+          <img src="/images/work1.jpg" alt="Makeup studio" style={s.heroImg} />
           <div style={s.imageBadge}>New in</div>
         </div>
         <div style={s.swatchStrip}>

@@ -43,7 +43,7 @@ export default function Header() {
         borderBottom: scrolled ? 'none' : '1px solid #DDD0C4',
       }}>
         <Link href="/" style={s.logo}>
-        <img src="/images/logo.jpeg" alt="Business Logo" style={s.logoImg} />
+        <img src="/images/logo.jpg" alt="Business Logo" style={s.logoImg} />
         </Link>
 
         <div style={s.links} className="desktop-links">
