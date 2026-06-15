@@ -6,8 +6,8 @@ export default function Hero() {
   const [primaryHovered, setPrimaryHovered] = useState(false)
 
   return (
-    <section style={s.section}>
-      <div style={s.content}>
+    <section className="hero-section" style={s.section}>
+      <div className="hero-content" style={s.content}>
         <p style={s.eyebrow}>Professional Makeup Shop & Studio</p>
         <h1 style={s.headline}>
           Where beauty<br />
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div style={s.imageWrap}>
+      <div className="hero-image-wrap" style={s.imageWrap}>
         <div style={s.imagePlaceholder}>
           <img src="/images/work1.jpg" alt="Makeup studio" style={s.heroImg} />
           <div style={s.imageBadge}>New in</div>

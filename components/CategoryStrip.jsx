@@ -35,7 +35,7 @@ function CatCard({ cat }) {
 
 export default function CategoryStrip() {
   return (
-    <section style={s.section}>
+    <section className="cat-section" style={s.section}>
       <div style={s.grid} className="cat-grid">
         {CATS.map(cat => <CatCard key={cat.name} cat={cat} />)}
       </div>

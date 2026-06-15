@@ -20,28 +20,29 @@ export default function Footer() {
 
   return (
     <footer style={s.footer}>
-      <div style={s.top}>
-        <div style={s.newsletter}>
+      <div className="footer-top" style={s.top}>
+        <div className="footer-newsletter" style={s.newsletter}>
           <p style={s.nlLabel}>Stay in the loop</p>
           <h3 style={s.nlTitle}>New drops, exclusive{'\n'}offers, beauty tips.</h3>
           {subscribed
             ? <p style={s.nlSuccess}>{"You're on the list."}</p>
             : (
-              <form onSubmit={handleSubscribe} style={s.nlForm}>
+              <form onSubmit={handleSubscribe} className="footer-nl-form" style={s.nlForm}>
                 <input
                   type="email"
                   placeholder="Your email address"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
+                  className="footer-nl-input"
                   style={s.nlInput}
                 />
-                <button type="submit" style={s.nlBtn}>Subscribe</button>
+                <button type="submit" className="footer-nl-btn" style={s.nlBtn}>Subscribe</button>
               </form>
             )
           }
         </div>
 
-        <div style={s.links}>
+        <div className="footer-links" style={s.links}>
           {COLS.map(col => (
             <div key={col.title} style={s.linkCol}>
               <p style={s.colTitle}>{col.title}</p>
@@ -53,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div style={s.bottom}>
+      <div className="footer-bottom" style={s.bottom}>
         <p style={s.legal}>© 2026 Ann Paul Beauty. All rights reserved.</p>
         <div style={{ display: 'flex', gap: 20 }}>
           {['Privacy', 'Terms', 'Cookies'].map(item => (

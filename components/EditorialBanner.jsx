@@ -9,7 +9,7 @@ const STATS = [
 
 export default function EditorialBanner() {
   return (
-    <section style={s.section}>
+    <section className="editorial-section" style={s.section}>
       <div>
         <p style={s.eyebrow}>In-store & online</p>
         <h2 style={s.headline}>

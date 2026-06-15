@@ -35,7 +35,7 @@ export default function Header() {
         <Link href="/shop" style={{ textDecoration: 'underline', color: 'inherit' }}>Shop now</Link>
       </div>
 
-      <nav style={{
+      <nav className="site-nav" style={{
         ...s.nav,
         background: scrolled ? 'rgba(250,247,244,0.95)' : '#FAF7F4',
         backdropFilter: scrolled ? 'blur(8px)' : 'none',

@@ -29,7 +29,7 @@ export default function FeaturedCard({ product, index = 0 }) {
       </div>
 
       {/* ── Two-column body ── */}
-      <div style={s.body}>
+      <div className="featured-body" style={s.body}>
 
         {/* Left — image */}
         <div style={s.imageCol}>
@@ -57,7 +57,7 @@ export default function FeaturedCard({ product, index = 0 }) {
         </div>
 
         {/* Right — details */}
-        <div style={s.detailCol}>
+        <div className="featured-detail-col" style={s.detailCol}>
 
           <div style={s.brandLabel}>MAKEUP HUB · {product.badge ? product.badge.toUpperCase().replace('-', ' ') : 'FEATURED'}</div>
           <h3 style={s.name}>{product.name}</h3>

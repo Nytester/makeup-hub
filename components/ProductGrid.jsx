@@ -15,7 +15,7 @@ export default function ProductGrid({ initialCategory }) {
     : PRODUCTS.filter(p => p.category === activeFilter.toLowerCase())
 
   return (
-    <section style={s.section}>
+    <section className="product-section" style={s.section}>
       <div style={s.header}>
         <div>
           <p style={s.eyebrow}>The edit</p>

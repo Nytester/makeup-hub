@@ -34,7 +34,7 @@ export default function ServicesPage() {
   )
 
   return (
-    <div style={{ background: '#FAF7F4', padding: '48px 64px 80px', minHeight: '80vh' }}>
+    <div className="services-page" style={{ background: '#FAF7F4', padding: '48px 64px 80px', minHeight: '80vh' }}>
       <div style={{ marginBottom: 48 }}>
         <p style={{ ...labelStyle, marginBottom: 12 }}>In-store studio</p>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px,4vw,52px)', fontWeight: 400, color: '#2C2520', lineHeight: 1.1, marginBottom: 8 }}>Book a service</h1>
